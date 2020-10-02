@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Victor && Harol
+ * @author Brayan Silva Silva UNT - 2020 Fue realizado en beneficiencia a favor de los niños necesitados harol y victor bebesitos
  */
 public class VentanaPrincipal extends javax.swing.JFrame {
 //Version 03
