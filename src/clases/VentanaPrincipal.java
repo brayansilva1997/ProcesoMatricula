@@ -16,7 +16,7 @@ import javax.swing.JOptionPane;
  * @author Victor && Harol
  */
 public class VentanaPrincipal extends javax.swing.JFrame {
-
+//bebesito
     /**
      * Creates new form VentanaPrincipal
      */
