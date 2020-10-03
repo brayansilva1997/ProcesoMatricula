@@ -53,6 +53,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         this.VentanaElegirCurso.setResizable(false);
         this.VentanaElegirCurso.setLocationRelativeTo(null);
         this.VentanaElegirCurso.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        this.VentanaExtracurricular.setSize(500,500);
+        this.VentanaExtracurricular.setResizable(false);
+        this.VentanaExtracurricular.setLocationRelativeTo(null);
+        this.VentanaExtracurricular.setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 /*METODOS*/
     public static void elegircurso(Alumno alum){
@@ -169,7 +173,15 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         btnElegirCurso = new javax.swing.JButton();
         jButton16 = new javax.swing.JButton();
+        btnActividadExtra = new javax.swing.JButton();
         jLabel24 = new javax.swing.JLabel();
+        VentanaExtracurricular = new javax.swing.JFrame();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel18 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jButton15 = new javax.swing.JButton();
@@ -334,7 +346,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("BUSCAR ALUMNO");
         jLabel2.setOpaque(true);
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 40, -1, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, -1, -1));
 
         jButton8.setBackground(new java.awt.Color(255, 0, 0));
         jButton8.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
@@ -685,6 +697,14 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
         jPanel5.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(377, 412, -1, -1));
 
+        btnActividadExtra.setText("ACTIVIDAD EXTRACURRICULAR");
+        btnActividadExtra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnActividadExtraActionPerformed(evt);
+            }
+        });
+        jPanel5.add(btnActividadExtra, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 420, -1, -1));
+
         jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo.png"))); // NOI18N
         jLabel24.setText("jLabel24");
         jPanel5.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 500));
@@ -698,6 +718,37 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         VentanaElegirCursoLayout.setVerticalGroup(
             VentanaElegirCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel18.setBackground(new java.awt.Color(255, 0, 0));
+        jLabel18.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel18.setText("CURSOS EXTRACURRICULARES");
+        jLabel18.setOpaque(true);
+        jPanel6.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 30, -1, -1));
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("1. Arte\n2. Deporte\n3. Musica\n");
+        jScrollPane2.setViewportView(jTextArea1);
+
+        jPanel6.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, 240, 80));
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo.png"))); // NOI18N
+        jPanel6.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 500));
+        jPanel6.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 230, -1, -1));
+
+        javax.swing.GroupLayout VentanaExtracurricularLayout = new javax.swing.GroupLayout(VentanaExtracurricular.getContentPane());
+        VentanaExtracurricular.getContentPane().setLayout(VentanaExtracurricularLayout);
+        VentanaExtracurricularLayout.setHorizontalGroup(
+            VentanaExtracurricularLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        VentanaExtracurricularLayout.setVerticalGroup(
+            VentanaExtracurricularLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -966,6 +1017,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         // TODO add your handling code here:
+        btnActividadExtra.setEnabled(false);
         this.txtEleccionCurso.setText("");
         txtIdAlumnoBuscado.setText("");
         this.VentanaElegirCurso.setVisible(true);
@@ -1008,7 +1060,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
              txtAreaCursos.setEnabled(true);
              if(matricula.alumnos.get(indice).cursos.size()==6){
                  JOptionPane.showMessageDialog(null, "No puedes registrar mas Cursos");
+                 btnActividadExtra.setEnabled(true);
              }else{
+                 
                  if (i == 1) {
                      Curso c = new Curso();
                      c.setNombreCurso("Matematica");
@@ -1074,7 +1128,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                      JOptionPane.showMessageDialog(null, "No existe el curso ASI COMO ELLA EN TU VIDA :V ");
                  }
              
-             
+             btnActividadExtra.setEnabled(false);
              
             }
         
@@ -1236,6 +1290,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNombreApoderadoActionPerformed
 
+    private void btnActividadExtraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActividadExtraActionPerformed
+        // TODO add your handling code here:
+        this.VentanaExtracurricular.setVisible(true);
+        this.VentanaElegirCurso.setVisible(false);
+    }//GEN-LAST:event_btnActividadExtraActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1277,8 +1337,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JFrame VentanaBuscarAlumno;
     private javax.swing.JFrame VentanaElegirCurso;
     private javax.swing.JFrame VentanaEliminarAlumno;
+    private javax.swing.JFrame VentanaExtracurricular;
     private javax.swing.JFrame VentanaModificarDatosAlumno;
     private javax.swing.JFrame VentanaMostrarDatosAlumno;
+    private javax.swing.JButton btnActividadExtra;
     private javax.swing.JButton btnActualizar;
     private javax.swing.JButton btnBuscarAlumnito;
     private javax.swing.JButton btnBuscarAlumno;
@@ -1307,6 +1369,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
@@ -1338,12 +1403,15 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JList<String> listaAlumnosDos;
     private javax.swing.JTextField txtAlumnoEliminar;
     private javax.swing.JTextField txtApellidoAlumno;
