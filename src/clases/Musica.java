@@ -15,7 +15,12 @@ public class Musica extends ActividadExtra{
         
         
     }
-     
+    public void establecerAlumno(Alumno alumno){
+        this.alumno=alumno;
+    }
+     public void setNombreMusica(String nombreMusica){
+         this.nombreMusica=nombreMusica;
+     }
     public void elegirMusica(){
         opcMusica=Integer.parseInt(JOptionPane.showInputDialog(null,"Ingresar Instrumento: "+"\n"+
                 "1. Guitarra"+"\n"+

@@ -14,6 +14,33 @@ public class Alumno {
     LinkedList <Curso> cursos = new LinkedList<>();
     Curso curso;
     ActividadExtra actividad = new ActividadExtra();
+    Arte a;
+    Musica m;
+    Deporte d;
+
+    public Arte getA() {
+        return a;
+    }
+
+    public void setA(Arte a) {
+        this.a = a;
+    }
+
+    public Musica getM() {
+        return m;
+    }
+
+    public void setM(Musica m) {
+        this.m = m;
+    }
+
+    public Deporte getD() {
+        return d;
+    }
+
+    public void setD(Deporte d) {
+        this.d = d;
+    }
 
     
     public void ContadorCursos(){

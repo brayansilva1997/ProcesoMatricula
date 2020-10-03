@@ -177,11 +177,17 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jLabel24 = new javax.swing.JLabel();
         VentanaExtracurricular = new javax.swing.JFrame();
         jPanel6 = new javax.swing.JPanel();
+        cboMusica = new javax.swing.JComboBox<>();
+        btnRegistrarExtra = new javax.swing.JButton();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        cboDeporte = new javax.swing.JComboBox<>();
+        cboArte = new javax.swing.JComboBox<>();
         jLabel18 = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
         jLabel17 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
+        jButton12 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jButton15 = new javax.swing.JButton();
@@ -722,6 +728,53 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        cboMusica.setBackground(new java.awt.Color(0, 0, 204));
+        cboMusica.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        cboMusica.setForeground(new java.awt.Color(255, 255, 255));
+        cboMusica.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "GUITARRA", "PIANO", "FLAUTA" }));
+        jPanel6.add(cboMusica, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 250, -1, -1));
+
+        btnRegistrarExtra.setText("REGISTRAR");
+        btnRegistrarExtra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegistrarExtraActionPerformed(evt);
+            }
+        });
+        jPanel6.add(btnRegistrarExtra, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 330, -1, -1));
+
+        jLabel21.setBackground(new java.awt.Color(255, 0, 0));
+        jLabel21.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel21.setText("DEPORTE");
+        jLabel21.setOpaque(true);
+        jPanel6.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, -1, -1));
+
+        jLabel20.setBackground(new java.awt.Color(255, 0, 0));
+        jLabel20.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel20.setText("ARTE");
+        jLabel20.setOpaque(true);
+        jPanel6.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 80, -1));
+
+        jLabel40.setBackground(new java.awt.Color(255, 0, 0));
+        jLabel40.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        jLabel40.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel40.setText("MUSICA");
+        jLabel40.setOpaque(true);
+        jPanel6.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, -1, -1));
+
+        cboDeporte.setBackground(new java.awt.Color(0, 0, 204));
+        cboDeporte.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        cboDeporte.setForeground(new java.awt.Color(255, 255, 255));
+        cboDeporte.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "FUTBOL", "NATACION", "ATLETISMO" }));
+        jPanel6.add(cboDeporte, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, -1, -1));
+
+        cboArte.setBackground(new java.awt.Color(0, 0, 204));
+        cboArte.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
+        cboArte.setForeground(new java.awt.Color(255, 255, 255));
+        cboArte.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "PINTURA", "DIBUJO", "FOTOGRAFIA", " " }));
+        jPanel6.add(cboArte, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, -1, -1));
+
         jLabel18.setBackground(new java.awt.Color(255, 0, 0));
         jLabel18.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(255, 255, 255));
@@ -729,16 +782,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jLabel18.setOpaque(true);
         jPanel6.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 30, -1, -1));
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jTextArea1.setText("1. Arte\n2. Deporte\n3. Musica\n");
-        jScrollPane2.setViewportView(jTextArea1);
-
-        jPanel6.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, 240, 80));
-
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo.png"))); // NOI18N
         jPanel6.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 500));
         jPanel6.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 230, -1, -1));
+
+        jButton12.setText("jButton12");
+        jPanel6.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 390, -1, -1));
 
         javax.swing.GroupLayout VentanaExtracurricularLayout = new javax.swing.GroupLayout(VentanaExtracurricular.getContentPane());
         VentanaExtracurricular.getContentPane().setLayout(VentanaExtracurricularLayout);
@@ -1040,10 +1089,13 @@ public class VentanaPrincipal extends javax.swing.JFrame {
              txtEleccionCurso.setEnabled(true);
              txtAreaCursos.setEnabled(true);
              btnElegirCurso.setEnabled(true);
+             idesito = indice;
              
          }
     }//GEN-LAST:event_btnBuscarAlumnoActionPerformed
 
+   
+    public static int idesito;
     private void btnElegirCursoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnElegirCursoActionPerformed
         // TODO add your handling code here:
         int i;
@@ -1051,14 +1103,15 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         String id;
         id = txtIdAlumnoBuscado.getText();
         int indice;
-         indice=matricula.BuscarAlumno(id);
+        indice=matricula.BuscarAlumno(id);
+        
          if(indice==-1){
              JOptionPane.showMessageDialog(null,"No se encontro al alumno");
              txtAreaCursos.setEnabled(false);
          }else{
              
              txtAreaCursos.setEnabled(true);
-             if(matricula.alumnos.get(indice).cursos.size()==6){
+             if(matricula.alumnos.get(indice).cursos.size()==5){
                  JOptionPane.showMessageDialog(null, "No puedes registrar mas Cursos");
                  btnActividadExtra.setEnabled(true);
              }else{
@@ -1296,6 +1349,61 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         this.VentanaElegirCurso.setVisible(false);
     }//GEN-LAST:event_btnActividadExtraActionPerformed
 
+    private void btnRegistrarExtraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarExtraActionPerformed
+        // TODO add your handling code here:
+        
+        if(cboArte.getSelectedItem().equals("DIBUJO")){
+            Arte a = new Arte();
+            a.setNombreArte("DIBUJO");
+            matricula.alumnos.get(VentanaPrincipal.idesito).setA(a);
+        }else if(cboArte.getSelectedItem().equals("PINTURA")){
+            Arte a = new Arte();
+            a.setNombreArte("PINTURA");
+            matricula.alumnos.get(VentanaPrincipal.idesito).setA(a);
+        }else if(cboArte.getSelectedItem().equals("FOTOGRAFIA")){
+            Arte a = new Arte();
+            a.setNombreArte("FOTOGRAFIA");
+            matricula.alumnos.get(VentanaPrincipal.idesito).setA(a);
+        }
+        if(cboDeporte.getSelectedItem().equals("FUTBOL")){
+            Deporte d = new Deporte();
+            d.setNombreDeporte("FUTBOL");
+            matricula.alumnos.get(VentanaPrincipal.idesito).setD(d);
+            
+        }else if(cboDeporte.getSelectedItem().equals("NATACION")){
+            Deporte d = new Deporte();
+            d.setNombreDeporte("NATACION");
+            matricula.alumnos.get(VentanaPrincipal.idesito).setD(d);
+        }else if(cboDeporte.getSelectedItem().equals("ATLETISMO")){
+            Deporte d = new Deporte();
+            d.setNombreDeporte("ATLETISMO");
+            matricula.alumnos.get(VentanaPrincipal.idesito).setD(d);
+        }
+        
+        if(cboMusica.getSelectedItem().equals("GUITARRA")){
+            Musica m = new Musica();
+            m.setNombreMusica("GUITARRA");
+            matricula.alumnos.get(VentanaPrincipal.idesito).setM(m);
+        }else if(cboMusica.getSelectedItem().equals("PIANO")){
+            Musica m = new Musica();
+            m.setNombreMusica("GUITARRA");
+            matricula.alumnos.get(VentanaPrincipal.idesito).setM(m);
+        }else if(cboMusica.getSelectedItem().equals("FLAUTA")){
+            Musica m = new Musica();
+            m.setNombreMusica("GUITARRA");
+            matricula.alumnos.get(VentanaPrincipal.idesito).setM(m);
+        }
+        
+        JOptionPane.showMessageDialog(null, "Se Registro con exito");
+        this.VentanaExtracurricular.setVisible(false);
+        this.VentanaElegirCurso.setVisible(true);
+        txtIdAlumnoBuscado.setText("");
+        txtEleccionCurso.setText("");
+        txtEleccionCurso.setEnabled(false);
+        btnActividadExtra.setEnabled(false);
+        btnElegirCurso.setEnabled(false);
+    }//GEN-LAST:event_btnRegistrarExtraActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1347,9 +1455,14 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton btnBuscarModificar;
     private javax.swing.JButton btnElegirCurso;
     private javax.swing.JButton btnRegistrarAlumno;
+    private javax.swing.JButton btnRegistrarExtra;
+    private javax.swing.JComboBox<String> cboArte;
+    private javax.swing.JComboBox<String> cboDeporte;
+    private javax.swing.JComboBox<String> cboMusica;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
@@ -1373,6 +1486,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
@@ -1393,6 +1508,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -1406,12 +1522,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JList<String> listaAlumnosDos;
     private javax.swing.JTextField txtAlumnoEliminar;
     private javax.swing.JTextField txtApellidoAlumno;

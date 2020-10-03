@@ -11,12 +11,17 @@ public class Arte extends ActividadExtra{
     private static final String hora = "9:00-11:00am";
      private static String nomProfe="Victor";
      private String nombreArte;
-
+     Alumno alumno;
     public Arte() {
         
         
     }
-     
+    public void establecerAlumno(Alumno alumno){
+        this.alumno=alumno;
+    }
+     public void setNombreArte(String nombreArte){
+         this.nombreArte=nombreArte;
+     }
     public void elegirArte(){
         opcArte=Integer.parseInt(JOptionPane.showInputDialog(null,"Ingrese Arte: "+"\n"+
                 "1. Pintura"+"\n"+
