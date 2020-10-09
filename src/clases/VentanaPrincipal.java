@@ -21,6 +21,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
      * Creates new form VentanaPrincipal
      */
     public Matricula matricula = new Matricula();
+    
     DefaultListModel<String> modeloAlumno = new DefaultListModel<>();
    
     public VentanaPrincipal() {
@@ -134,23 +135,24 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jButton10 = new javax.swing.JButton();
         jLabel27 = new javax.swing.JLabel();
         VentanaModificarDatosAlumno = new javax.swing.JFrame();
-        jButton9 = new javax.swing.JButton();
+        jPanel8 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        txtNombreModificar = new javax.swing.JTextField();
         txtSexoModificar = new javax.swing.JTextField();
-        txtIdModificar = new javax.swing.JTextField();
-        txtApellidoModificar = new javax.swing.JTextField();
-        txtEdadModificar = new javax.swing.JTextField();
         jLabel22 = new javax.swing.JLabel();
-        txtIdBuscarModificar = new javax.swing.JTextField();
-        btnBuscarModificar = new javax.swing.JButton();
         btnActualizar = new javax.swing.JButton();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel36 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
+        txtApellidoModificar = new javax.swing.JTextField();
         jLabel38 = new javax.swing.JLabel();
+        txtNombreModificar = new javax.swing.JTextField();
+        txtIdModificar = new javax.swing.JTextField();
+        txtEdadModificar = new javax.swing.JTextField();
+        btnBuscarModificar = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jLabel30 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        txtIdBuscarModificar = new javax.swing.JTextField();
+        jLabel36 = new javax.swing.JLabel();
         VentanaEliminarAlumno = new javax.swing.JFrame();
         jPanel2 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
@@ -448,46 +450,15 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         VentanaModificarDatosAlumno.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton9.setBackground(new java.awt.Color(255, 0, 0));
-        jButton9.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        jButton9.setForeground(new java.awt.Color(255, 255, 255));
-        jButton9.setText("VOLVER");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
-            }
-        });
-        VentanaModificarDatosAlumno.getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 390, -1, -1));
+        jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel4.setBackground(new java.awt.Color(255, 0, 0));
         jLabel4.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("MODIFICAR DATOS DE ALUMNO");
         jLabel4.setOpaque(true);
-        VentanaModificarDatosAlumno.getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, -1, -1));
-
-        txtNombreModificar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNombreModificarActionPerformed(evt);
-            }
-        });
-        VentanaModificarDatosAlumno.getContentPane().add(txtNombreModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 170, -1));
-        VentanaModificarDatosAlumno.getContentPane().add(txtSexoModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, 170, -1));
-
-        txtIdModificar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtIdModificarActionPerformed(evt);
-            }
-        });
-        VentanaModificarDatosAlumno.getContentPane().add(txtIdModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 170, -1));
-
-        txtApellidoModificar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtApellidoModificarActionPerformed(evt);
-            }
-        });
-        VentanaModificarDatosAlumno.getContentPane().add(txtApellidoModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, 170, -1));
-        VentanaModificarDatosAlumno.getContentPane().add(txtEdadModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 290, 170, -1));
+        jPanel8.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, -1, -1));
+        jPanel8.add(txtSexoModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 250, 170, -1));
 
         jLabel22.setBackground(new java.awt.Color(255, 0, 0));
         jLabel22.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
@@ -495,19 +466,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jLabel22.setText("Edad:");
         jLabel22.setToolTipText("");
         jLabel22.setOpaque(true);
-        VentanaModificarDatosAlumno.getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, -1, -1));
-        VentanaModificarDatosAlumno.getContentPane().add(txtIdBuscarModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, 180, -1));
-
-        btnBuscarModificar.setBackground(new java.awt.Color(255, 0, 0));
-        btnBuscarModificar.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        btnBuscarModificar.setForeground(new java.awt.Color(255, 255, 255));
-        btnBuscarModificar.setText("BUSCAR");
-        btnBuscarModificar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBuscarModificarActionPerformed(evt);
-            }
-        });
-        VentanaModificarDatosAlumno.getContentPane().add(btnBuscarModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 70, -1, -1));
+        jPanel8.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, -1, -1));
 
         btnActualizar.setBackground(new java.awt.Color(255, 0, 0));
         btnActualizar.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
@@ -518,31 +477,14 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 btnActualizarActionPerformed(evt);
             }
         });
-        VentanaModificarDatosAlumno.getContentPane().add(btnActualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 320, -1, -1));
+        jPanel8.add(btnActualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 320, -1, -1));
 
-        jLabel30.setBackground(new java.awt.Color(255, 0, 0));
-        jLabel30.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        jLabel30.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel30.setText("INGRESA ID:");
-        jLabel30.setToolTipText("");
-        jLabel30.setOpaque(true);
-        VentanaModificarDatosAlumno.getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, -1, -1));
-
-        jLabel36.setBackground(new java.awt.Color(255, 0, 0));
-        jLabel36.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        jLabel36.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel36.setText("ID:");
-        jLabel36.setToolTipText("");
-        jLabel36.setOpaque(true);
-        VentanaModificarDatosAlumno.getContentPane().add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, -1, -1));
-
-        jLabel37.setBackground(new java.awt.Color(255, 0, 0));
-        jLabel37.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        jLabel37.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel37.setText("Nombre:");
-        jLabel37.setToolTipText("");
-        jLabel37.setOpaque(true);
-        VentanaModificarDatosAlumno.getContentPane().add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, -1, -1));
+        txtApellidoModificar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtApellidoModificarActionPerformed(evt);
+            }
+        });
+        jPanel8.add(txtApellidoModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, 170, -1));
 
         jLabel38.setBackground(new java.awt.Color(255, 0, 0));
         jLabel38.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
@@ -550,7 +492,52 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jLabel38.setText("Apellido:");
         jLabel38.setToolTipText("");
         jLabel38.setOpaque(true);
-        VentanaModificarDatosAlumno.getContentPane().add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, -1, -1));
+        jPanel8.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, -1, -1));
+
+        txtNombreModificar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNombreModificarActionPerformed(evt);
+            }
+        });
+        jPanel8.add(txtNombreModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 170, -1));
+
+        txtIdModificar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtIdModificarActionPerformed(evt);
+            }
+        });
+        jPanel8.add(txtIdModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 170, -1));
+        jPanel8.add(txtEdadModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 290, 170, -1));
+
+        btnBuscarModificar.setBackground(new java.awt.Color(255, 0, 0));
+        btnBuscarModificar.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        btnBuscarModificar.setForeground(new java.awt.Color(255, 255, 255));
+        btnBuscarModificar.setText("BUSCAR");
+        btnBuscarModificar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBuscarModificarActionPerformed(evt);
+            }
+        });
+        jPanel8.add(btnBuscarModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 70, -1, -1));
+
+        jButton9.setBackground(new java.awt.Color(255, 0, 0));
+        jButton9.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jButton9.setForeground(new java.awt.Color(255, 255, 255));
+        jButton9.setText("VOLVER");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+        jPanel8.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 390, -1, -1));
+
+        jLabel30.setBackground(new java.awt.Color(255, 0, 0));
+        jLabel30.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jLabel30.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel30.setText("INGRESA ID:");
+        jLabel30.setToolTipText("");
+        jLabel30.setOpaque(true);
+        jPanel8.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, -1, -1));
 
         jLabel39.setBackground(new java.awt.Color(255, 0, 0));
         jLabel39.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
@@ -558,13 +545,32 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jLabel39.setText("Sexo:");
         jLabel39.setToolTipText("");
         jLabel39.setOpaque(true);
-        VentanaModificarDatosAlumno.getContentPane().add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 250, -1, -1));
+        jPanel8.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 250, -1, -1));
 
         jLabel28.setBackground(new java.awt.Color(255, 0, 0));
         jLabel28.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
         jLabel28.setForeground(new java.awt.Color(255, 255, 255));
         jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo.png"))); // NOI18N
-        VentanaModificarDatosAlumno.getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 500));
+        jPanel8.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 500));
+
+        jLabel37.setBackground(new java.awt.Color(255, 0, 0));
+        jLabel37.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jLabel37.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel37.setText("Nombre:");
+        jLabel37.setToolTipText("");
+        jLabel37.setOpaque(true);
+        jPanel8.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 170, -1, -1));
+        jPanel8.add(txtIdBuscarModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, 180, -1));
+
+        jLabel36.setBackground(new java.awt.Color(255, 0, 0));
+        jLabel36.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jLabel36.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel36.setText("ID:");
+        jLabel36.setToolTipText("");
+        jLabel36.setOpaque(true);
+        jPanel8.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, -1, -1));
+
+        VentanaModificarDatosAlumno.getContentPane().add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 500));
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -913,6 +919,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
    
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        
         this.VentanaAgregarAlumno.setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -1521,6 +1528,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
