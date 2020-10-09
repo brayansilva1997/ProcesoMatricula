@@ -132,7 +132,7 @@ public class VentanaPrincipall extends javax.swing.JFrame {
         e.setVisible(true);
         dispose();
     }//GEN-LAST:event_botonElegirDatosAlumnoActionPerformed
-
+//jeje
     private void botonMostrarAlumnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonMostrarAlumnoActionPerformed
         // TODO add your handling code here:
         mo.setVisible(true);
